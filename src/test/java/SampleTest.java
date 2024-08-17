@@ -22,8 +22,7 @@ public class SampleTest {
     @BeforeAll
     public static void setup() throws MalformedURLException {
         System.out.println("Setup web-driver");
-        //System.setProperty("webdriver.chrome.driver","C:\\Users\\ms515\\IdeaProjects\\Sample\\src\\test\\resources\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
+         ChromeOptions options = new ChromeOptions();
         options.addArguments("--selenium-manager=true");
         //local driver
         //driver = new ChromeDriver();
