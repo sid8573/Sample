@@ -25,7 +25,7 @@ pipeline {
                 emailext(
                     subject: 'Test Report',
                     body: 'Successful run',
-                    to: 'lookingfor7lpa@gmail.com'
+                    to: 'needmoreconfig@gmail.com'
                 )
             }
         }
