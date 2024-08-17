@@ -20,7 +20,7 @@ pipeline {
             }
             post {
                 always {
-                    junit '**/target/test-reports/*.xml'
+                    junit '**/build/reports/tests/test/'
                 }
             }
         }
@@ -31,7 +31,7 @@ pipeline {
                     subject: 'Test Report',
                     body: 'Attached is the test report from the latest build.',
                     to: 'lookingfor7lpa@gmail.com',
-                    attachmentsPattern: '**/target/test-reports/*.xml'
+                    attachmentsPattern: '**/build/reports/tests/test/'
                 )
             }
         }
